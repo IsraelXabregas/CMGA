@@ -1,0 +1,29 @@
+.lblue {
+    background-color: #098bea;
+    color: #ffffff;
+}
+
+.flat {
+    border-radius: 0px;
+}
+
+.flatPanel {
+    border-radius: 0px;
+}
+
+.pad {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pad {
+    padding: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
