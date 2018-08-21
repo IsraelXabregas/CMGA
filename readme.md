@@ -3,7 +3,9 @@
 Projeto de TCC utilizado como requisito para formação em Técnico em Automação Industrial na Escola Técnica Estadual Presidente Vargas (ETEC Centro Paula Souza).
 O projeto teve como finalidade constituir um sistema de gerenciamento de acessos em ambiente escolar.
 
-O projeto funciona através da integração de hardware com software. Inicialmente, é instalada em cada porta de salas e laboratórios uma trava com um leitor RFID. A aplicação web no computador serve em primeiro momento, para cadastrar os cartões de acesso com os dados de cada professor ou funcionário. Após os dados serem devidamente cadastrados em sistema, o professor ou funcionário estar´a apto para acessar um laboratório com seu cartão de acesso.
+O projeto funciona através da integração entre hardware e software. Inicialmente, é instalada em cada porta de salas e laboratórios uma trava com um leitor RFID. A aplicação web no computador serve em primeiro momento, para cadastrar os cartões de acesso com os dados de cada professor ou funcionário. Após os dados serem devidamente cadastrados em sistema, o professor ou funcionário estará apto para acessar um laboratório com seu crachá, no caso, seu cartão de acesso com a tecnlogia RFID.
+
+Quando o cartão de acesso for apresentado no leitor da porta, a numeração única do cartão de acesso, chamada de UID (Unique Identifier) será lida e recebida pelo controlador arduino através do RFID. Mediante os dados recebidos, a aplicação desenvolvida irá verificar se o UID está cadastrado em sistema e se o mesmo está liberado para acesso. Caso esteja devidamente cadastrado e liberado, a aplicação enviará um comando para o controlador liberar o laboratório ou sala para uso. Este processo ocorre instantaneamente e pode ser acompanhado na aplicação para monitoramento, além de ser possível fazer aberturas remotas dos laboratórios disponíveis.
 
 ## Diagrama com recursos e tecnologias utilizados no projeto:
 ![
